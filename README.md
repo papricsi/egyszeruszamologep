@@ -1,4 +1,4 @@
-                                                       Egyszerű számológép
+                                               Egyszerű számológép
 Ez egy egyszerű, Pythonban készített számológép, amivel az alapműveleteket lehet végezni.
 
 
