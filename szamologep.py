@@ -6,13 +6,13 @@ print ('$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 print('')
 
 
-All= input('Osszeadas(1), Kivonas(2), Szorzas(3), Osztas(4), Hatvanyozas(5)')
+All= input('Osszeadas(1), Kivonas(2), Szorzas(3), Osztas(4), Hatvanyozas(5): ')
 All2=0
 
-
-num1 = int (input('Add meg az elsõ tagot'))
-num2 = int (input('Add meg a második tagot'))
-
+print('')
+num1 = int (input('Add meg az elsõ tagot: '))
+num2 = int (input('Add meg a második tagot: '))
+print('')
 
 if All == "1":
     All2 = int(num1) + int(num2)
