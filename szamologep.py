@@ -24,35 +24,37 @@ try:
     num1 = int (input('Add meg az elsõ tagot: '))
     num2 = int (input('Add meg a második tagot: '))
 except:
-    print("Kérlek számokat írj be!")
+    print("Egész számot kellett volna beírnod!")
 print('')
 
-if muvelet == 1:
-    eredmeny = int(num1) + int(num2)
-    print (num1, '+' , num2,'=', eredmeny)
-    
+try:
+    if muvelet == 1:
+        eredmeny = int(num1) + int(num2)
+        print (num1, '+' , num2,'=', eredmeny)
 
-if muvelet == 2:
-    eredmeny = int(num1) - int(num2)
-    print (num1, '-' , num2,'=', eredmeny)
-     
-    
 
-if muvelet == 3:
-    eredmeny = int(num1) * int(num2)
-    print (num1, '*' , num2,'=', eredmeny)
+    if muvelet == 2:
+        eredmeny = int(num1) - int(num2)
+        print (num1, '-' , num2,'=', eredmeny)
 
-if muvelet == 4:
-    try:
-        eredmeny = int(num1) / int(num2)
-        print (num1, '/' , num2,'=', eredmeny)
-    except ZeroDivisionError:
-        print("Hoppá! Nullával osztás")
 
-if muvelet == 5:
-    eredmeny = int(num1) ** int(num2)
-    print (num1, '**' , num2,'=', eredmeny)
 
+    if muvelet == 3:
+        eredmeny = int(num1) * int(num2)
+        print (num1, '*' , num2,'=', eredmeny)
+
+    if muvelet == 4:
+        try:
+            eredmeny = int(num1) / int(num2)
+            print (num1, '/' , num2,'=', eredmeny)
+        except ZeroDivisionError:
+            print("Hoppá! Nullával osztás")
+
+    if muvelet == 5:
+        eredmeny = int(num1) ** int(num2)
+        print (num1, '**' , num2,'=', eredmeny)
+except NameError:
+    print("Nem adtál meg számokat")
 print('')    
 print ('$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$')
 
