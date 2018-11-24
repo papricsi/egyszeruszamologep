@@ -6,16 +6,16 @@ print ('$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 print('')
 
 try:
-    muvelet= int(input('Osszeadas(1), Kivonas(2), Szorzas(3), Osztas(4), Hatvanyozas(5): '))
+    All= int(input('Osszeadas(1), Kivonas(2), Szorzas(3), Osztas(4), Hatvanyozas(5): '))
 except ValueError:
     print("Kérlek számokat írj be!")
-    muvelet=0               #csak azért, hogy ha itt exceptionre fut, akkor 15. sorban lévő while ne szálljon el amiatt, hogy még nincs ilyen változó
-# eredmeny=0  # nem kell használat előtt deklarálni a változókat
+    All=0               #csak azért, hogy ha itt exceptionre fut, akkor 15. sorban lévő while ne szálljon el amiatt, hogy még nincs ilyen változó
+# All2=0  # nem kell használat előtt deklarálni a változókat
 
-while int(muvelet) not in (1,2,3,4,5):
+while int(All) not in (1,2,3,4,5):
     print("Nem a lehetséges műveletek közül választottál")
     try:
-        muvelet = int(input('Osszeadas(1), Kivonas(2), Szorzas(3), Osztas(4), Hatvanyozas(5): '))
+        All = int(input('Osszeadas(1), Kivonas(2), Szorzas(3), Osztas(4), Hatvanyozas(5): '))
     except ValueError:
         print("Kérlek számokat írj be!")
 
@@ -28,31 +28,31 @@ except:
 print('')
 
 try:
-    if muvelet == 1:
-        eredmeny = int(num1) + int(num2)
-        print (num1, '+' , num2,'=', eredmeny)
+    if All == 1:
+        All2 = int(num1) + int(num2)
+        print (num1, '+' , num2,'=', All2)
 
 
-    if muvelet == 2:
-        eredmeny = int(num1) - int(num2)
-        print (num1, '-' , num2,'=', eredmeny)
+    if All == 2:
+        All2 = int(num1) - int(num2)
+        print (num1, '-' , num2,'=', All2)
 
 
 
-    if muvelet == 3:
-        eredmeny = int(num1) * int(num2)
-        print (num1, '*' , num2,'=', eredmeny)
+    if All == 3:
+        All2 = int(num1) * int(num2)
+        print (num1, '*' , num2,'=', All2)
 
-    if muvelet == 4:
+    if All == 4:
         try:
-            eredmeny = int(num1) / int(num2)
-            print (num1, '/' , num2,'=', eredmeny)
+            All2 = int(num1) / int(num2)
+            print (num1, '/' , num2,'=', All2)
         except ZeroDivisionError:
             print("Hoppá! Nullával osztás")
 
-    if muvelet == 5:
-        eredmeny = int(num1) ** int(num2)
-        print (num1, '**' , num2,'=', eredmeny)
+    if All == 5:
+        All2 = int(num1) ** int(num2)
+        print (num1, '**' , num2,'=', All2)
 except NameError:
     print("Nem adtál meg számokat")
 print('')    
